@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "New Year Greeting";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>New Year Greeting and Resolution</h2>
+<p>@ViewBag.Message</p>
+
+<form action="Home/AnimalOfYear" method="post">
+    <p>What is your birth year?</p>
+    <input type="number" name="year" />
+    <input type="submit" value="calculate" />
+</form>
+
+<img src="~/Content/images/north.png" />
+
+<p>Make your own New Year Resolution Greeting card!</p>
+

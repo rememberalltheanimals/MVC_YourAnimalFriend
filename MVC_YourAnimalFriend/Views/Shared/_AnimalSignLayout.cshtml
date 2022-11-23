@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title - My Birth Year Animal Friend</title>
+    @Styles.Render("~/Content/AnimalCss")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+
+    <header>
+        <img src="~/Content/images/12animals.jpg" />
+        <h1>Let's Help Our Birth Year Animals!</h1>
+    </header>
+
+    <nav>
+        <div>
+            <ul>
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                <li>@Html.ActionLink("Volunteers", "Index", "Volunteers")</li>
+                <li>@Html.ActionLink("Donations", "Index", "Donations")</li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div>
+            @RenderBody()
+        </div>
+    </main>
+   
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+
+</html>
